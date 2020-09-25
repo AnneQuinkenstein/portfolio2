@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import {
     AppBar,
     Toolbar,
@@ -36,6 +37,7 @@ const useStyles = makeStyles(theme => ({
         margin: '0.5rem auto',
         width: theme.spacing(13),
         height: theme.spacing(13),
+        margin: theme.spacing(5),
     },
     listItem: {
         color: 'yellow',
@@ -46,18 +48,22 @@ const menuItems = [
     {
         listIcon: <Home />,
         listText: 'Home',
+        listPath: '/',
     },
     {
         listIcon: <AssignmentInd />,
-        listText: 'CV',
+        listText: 'Resume',
+        listPath: '/resume', 
     },
     {
         listIcon: <Apps />,
         listText: 'Portfolio',
+        listPath: '/portfolio', 
     },
     {
         listIcon: <ContactMail />,
-        listText: 'Contacts',
+        listText: 'Contact',
+        listPath: '/contact', 
     }
 ]
 
@@ -81,7 +87,7 @@ const Navbar = () => {
                 <Divider />
                 <List>
                     {menuItems.map((lsItem, key) => (
-                        <ListItem button key={key}>
+                        <ListItem button key={key} component={Link} to={lsItem.listPath}>
                             <ListItemIcon className={classes.listItem}>
                                 {lsItem.listIcon}
                             </ListItemIcon>
@@ -96,14 +102,15 @@ const Navbar = () => {
     return (
         <>
             <Box component="nav">
-                <AppBar position="static" style={{ background: 'black' }}>
-                    <Toolbar>
+                <AppBar position="static" style={{ background: 'black'}}>
+                    <Toolbar style={{ justifyContent: 'flex-end' }}>
                         <IconButton onClick={toggleSlider('right', true)}>
-                            <ArrowBack style={{ color: 'yellow' }} />
-                        </IconButton>
+                            {/* <ArrowBack style={{ color: 'yellow' }} />
+                        */}
                         <Typography variant="h5" style={{ color: 'yellow' }}>
                             Portfolio
                     </Typography>
+                    </IconButton>
                         <MobileRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider('right', false)}>
                             {sideList('right')}
                         </MobileRightMenuSlider>
