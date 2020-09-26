@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://anne-quinkenstein.netlify.app/">
-    <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="80" height="80">
+    <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="300" height="160">
   </a>
 
   <h3 align="center">PORTFOLIO</h3>
@@ -26,22 +26,6 @@
     <a href="https://github.com/AnneQuinkenstein/portfolio2/issues">Request Feature</a>
   </p>
 </p>
-
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
-- [About the Project](#about-the-project)
-  - [Built With](#built-with)
-- [Contact](#contact)
-
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
-
-<a href="https://anne-quinkenstein.netlify.app/">
-    <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="150" height="80">
-  </a>
 
 ### Built With
 
