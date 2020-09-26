@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/AnneQuinkenstein/portfolio2">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://anne-quinkenstein.netlify.app/">
+    <img src="https://ibb.co/Y8JKwr6" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PORTFOLIO</h3>
@@ -19,7 +19,7 @@
     Website to get a short glance at my work-life: my work experiance, some of my projects, a possibility to get in touch
     <br />
     <br />
-    <a href="https://github.com/AnneQuinkenstein/portfolio2">View Demo</a>
+    <a href="https://anne-quinkenstein.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/AnneQuinkenstein/portfolio2/issues">Report Bug</a>
     ·
@@ -33,35 +33,20 @@
 
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
 - [Contact](#contact)
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][https://ibb.co/Y8JKwr6]](https://anne-quinkenstein.netlify.app/)
 
 ### Built With
 
-- []()
-- []()
-- []()
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-See the [open issues](https://github.com/AnneQuinkenstein/portfolio2/issues) for a list of proposed features (and known issues).
-
-<!-- CONTACT -->
+- [React](https://reactjs.org/)
+- [Material UI](https://material-ui.com/)
+- [Formspree](https://formspree.io/)
+- [Axios](https://formspree.io/)
 
 ## Contact
 
