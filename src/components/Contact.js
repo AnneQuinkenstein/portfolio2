@@ -13,28 +13,28 @@ form: {
 },
 button: {
     marginTop: '1rem', 
-    color: '#3080d6', 
-    borderColor: '#3080d6', 
+    color: 'tomato', 
+    borderColor: 'tomato', 
 }
 }))
 
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
-      color: "#3080d6",
+      color: "tomato",
     },
     "& label": {
-      color: "tan",
+      color: "#3080d6",
     },
     "& .MuiOutlinedInput-root": {
         "& fieldset" : {
-            borderColor: "tan",
+            borderColor: "#3080d6",
         },
         '&:hover fieldset': {
-            borderColor: 'tan', 
+            borderColor: '#3080d6', 
         },
         '&.Mui-focused fieldset': {
-            borderColor: 'tan',
+            borderColor: '#3080d6',
         },
     }
   },
@@ -50,7 +50,7 @@ const classes = useStyles();
       <Box component="div" style={{background: "#222833d4", height: '100vh'}}>
         <Grid container justify="center">
           <Box component="form" className={classes.form}>
-            <Typography variant="h5" style={{color: '#3080d6', textAlign: 'center', textTransform: "uppercase"}}>hire or contact me ...</Typography>
+            <Typography variant="h5" style={{color: 'tomato', textAlign: 'center', textTransform: "uppercase"}}>hire or contact me ...</Typography>
             <InputField fullWidth={true} label="Name" variant="outlined" inputProps={{style: { color: "white"}}} margin="dense" size="medium" />
               <br/>
             <InputField fullWidth={true} label="Email" variant="outlined" 

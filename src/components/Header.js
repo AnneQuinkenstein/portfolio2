@@ -8,8 +8,8 @@ import avatar from '../images/avatar.png';
 
 const useStyles = makeStyles(theme => ({
     avatar: {
-        width: theme.spacing(35),
-        height: theme.spacing(35),
+        width: theme.spacing(30),
+        height: theme.spacing(30),
         margin: theme.spacing(1),
     },
     title: {
