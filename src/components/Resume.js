@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#222833d4",
   },
   timeLine: {
     position: "relative",
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       height: "100%",
-      border: "1px solid tan",
+      border: "1px solid #26bef8",
       right: "40px",
       top: 0,
     },
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineItem: {
     padding: "1rem",
-    borderBottom: "2px solid tan",
+    borderBottom: "2px solid #26bef8",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
+      borderColor: "rgb(48, 128, 214) rgb(48, 128, 214) transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -58,12 +58,12 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1rem",
-        borderColor: "tan",
+        borderColor: "#26bef8",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
+        borderColor: "transparent transparent rgb(48, 128, 214) rgb(48, 128, 214)",
       },
     },
   },
@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
     fontSize: "1.8rem",
-    background: "tomato",
+    background: "rgb(48, 128, 214)",
     color: "white",
     lineHeight: 1,
     padding: "0.5rem 0 1rem",
@@ -92,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "tomato",
+    color: "rgb(48, 128, 214)",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
@@ -125,10 +125,10 @@ const Resume = () => {
             <Typography variant="h5" className={classes.subHeading}>
               webdesign
             </Typography>
-            <Typography variant="body1" style={{ color: "tomato" }}>
+            <Typography variant="body1" style={{ color: "#26bef8" }}>
               web design lkaösfjölskdj f
             </Typography>
-            <Typography variant="subtitle1" style={{ color: "tan" }}>
+            <Typography variant="subtitle1" style={{ color: "rgb(193, 227, 240)" }}>
               Lorem ipsum akl sf ljlaösdfk lkj ölfakj aslkfjlkasdlfkj
               alksdjflkajdfölkljhfakjhakljf ljsdfl
               sdafkjlsdlöakjfölaksjdfölkjsaölfkjölkajdsfljslkdfj
@@ -146,10 +146,10 @@ const Resume = () => {
             <Typography variant="h5" className={classes.subHeading}>
               css & html
             </Typography>
-            <Typography variant="body1" style={{ color: "tomato" }}>
+            <Typography variant="body1" style={{ color: "#26bef8" }}>
               web design lkaösfjölskdj f
             </Typography>
-            <Typography variant="subtitle1" style={{ color: "tan" }}>
+            <Typography variant="subtitle1" style={{ color: "rgb(193, 227, 240)" }}>
               Lorem ipsum akl sf ljlaösdfk lkj ölfakj aslkfjlkasdlfkj
               alksdjflkajdfölkljhfakjhakljf ljsdfl
               sdafkjlsdlöakjfölaksjdfölkjsaölfkjölkajdsfljslkdfj

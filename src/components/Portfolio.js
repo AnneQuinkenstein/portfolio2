@@ -12,19 +12,18 @@ import {
   Typography,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
-import project1 from "../images/html-css-javascript.jpg";
-import project2 from '../images/mern-stack.jpg'
+import project1 from "../images/gamenight.png";
+import project2 from '../images/exommerce.png';
 
 
 
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
+    background: "#222833d4",
     height: "100%",
   },
   cardContainer: {
     maxWidth: 345,
-    margin: "3rem",
     margin: "5rem auto",
   },
 });
