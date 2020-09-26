@@ -14,7 +14,6 @@ import {
     Box
 } from '@material-ui/core';
 import {
-    ArrowBack,
     AssignmentInd,
     Home,
     Apps,
@@ -40,7 +39,7 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(5),
     },
     listItem: {
-        color: 'yellow',
+        color: '#3080d6',
     }
 }));
 
@@ -105,9 +104,7 @@ const Navbar = () => {
                 <AppBar position="static" style={{ background: 'black'}}>
                     <Toolbar style={{ justifyContent: 'flex-end' }}>
                         <IconButton onClick={toggleSlider('right', true)}>
-                            {/* <ArrowBack style={{ color: 'yellow' }} />
-                        */}
-                        <Typography variant="h5" style={{ color: 'yellow' }}>
+                        <Typography variant="h5" style={{ color: '#3080d6' }}>
                             Portfolio
                     </Typography>
                     </IconButton>
