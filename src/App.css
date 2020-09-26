@@ -8,3 +8,11 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
+
+.errorMsg{
+  color: tan; 
+}
+
+.successMsg{
+  color: tan; 
+}

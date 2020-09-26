@@ -3,6 +3,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
+import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -41,27 +42,38 @@ const InputField = withStyles({
 })(TextField);
 
 const Contact = () => {
-  const [status, setStatus] = useState();
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null,
+  });
+
   const classes = useStyles("");
 
-  const submitForm = (ev) => {
-    console.log("submitted");
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        setStatus("SUCCESS");
-      } else {
-        setStatus("ERROR");
-      }
-    };
-    xhr.send(data);
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg },
+    });
+    if (ok) {
+      form.reset();
+    }
+  };
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ submitting: true });
+    axios({
+      method: "post",
+      url: "https://formspree.io/maypzkgy",
+      data: new FormData(form),
+    })
+      .then((r) => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch((r) => {
+        handleServerResponse(false, r.response.data.error, form);
+      });
   };
 
   return (
@@ -69,13 +81,7 @@ const Contact = () => {
       <Box component="div" style={{ background: "#222833d4", height: "100vh" }}>
         <Navbar />
         <Grid container justify="center">
-          <Box
-            component="form"
-            className={classes.form}
-            onSubmit={submitForm}
-            action="https://formspree.io/maypzkgy"
-            method="POST"
-          >
+          <Box component="form" className={classes.form} onSubmit={handleOnSubmit}>
             <Typography
               variant="h5"
               style={{
@@ -93,6 +99,7 @@ const Contact = () => {
               inputProps={{ style: { color: "white" } }}
               margin="dense"
               size="medium"
+              id="message" name="message"
             />
             <br />
             <InputField
@@ -102,15 +109,17 @@ const Contact = () => {
               inputProps={{ style: { color: "white" } }}
               margin="dense"
               size="medium"
+              type="email"
             />
             <br />
             <InputField
               fullWidth={true}
-              label="Company name"
+              label="Message"
               variant="outlined"
               inputProps={{ style: { color: "white" } }}
               margin="dense"
               size="medium"
+              id="message" name="message"
             />
             <br />
             <Button
@@ -118,11 +127,16 @@ const Contact = () => {
               variant="outlined"
               fullWidth={true}
               endIcon={<SendIcon />}
-              type="submit"
+              type="submit" disabled={serverState.submitting}
             >
               {" "}
               contact me
             </Button>
+            {serverState.status && (
+          <p className={!serverState.status.ok ? "errorMsg" : ""} className='successMsg' >
+            {serverState.status.msg}
+          </p>
+        )}
           </Box>
         </Grid>
       </Box>
