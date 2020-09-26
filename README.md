@@ -7,23 +7,22 @@
 </p>
 
 <!-- PROJECT LOGO -->
+
+  <h3 align="center">PORTFOLIO</h3>
+
 <br />
 <p align="center">
   <a href="https://anne-quinkenstein.netlify.app/">
     <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="300" height="160">
   </a>
 
-  <h3 align="center">PORTFOLIO</h3>
-
   <p align="center">
     Website to get a short glance at my work-life: my work experiance, some of my projects, a possibility to get in touch
     <br />
     <br />
-    <a href="https://anne-quinkenstein.netlify.app/">View Demo</a>
+    <a href="https://anne-quinkenstein.netlify.app/">Demo</a>
     ·
     <a href="https://github.com/AnneQuinkenstein/portfolio2/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/AnneQuinkenstein/portfolio2/issues">Request Feature</a>
   </p>
 </p>
 
