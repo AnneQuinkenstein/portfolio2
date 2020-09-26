@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://anne-quinkenstein.netlify.app/">
-    <img src="https://ibb.co/Y8JKwr6" alt="Logo" width="80" height="80">
+    <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PORTFOLIO</h3>
@@ -39,7 +39,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][https://ibb.co/Y8JKwr6]](https://anne-quinkenstein.netlify.app/)
+<a href="https://anne-quinkenstein.netlify.app/">
+    <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="150" height="80">
+  </a>
 
 ### Built With
 
@@ -54,4 +56,4 @@
 <a target="_blank" href="mailto:a.quinkenstein@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white"></img></a>
 </p>
 
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em>I love connecting with different people. So if you want to say 'hi', I'll be happy to meet you more! :)</em>
