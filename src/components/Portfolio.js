@@ -13,9 +13,7 @@ import {
 } from "@material-ui/core";
 import Navbar from "./Navbar";
 import project1 from "../images/gamenight.png";
-import project2 from '../images/exommerce.png';
-
-
+import project2 from "../images/exommerce.png";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -58,22 +56,26 @@ const Portfolio = () => {
                     lk
                   </Typography>
                 </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Share
-                  </Button>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Live Demo
-                  </Button>
-                </CardActions>
-             
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  {" "}
+                  Share
+                </Button>
+                <Button
+                  size="small"
+                  href="https://game-night-aquin.netlify.app/"
+                  target="_blank"
+                  color="primary"
+                >
+                  {" "}
+                  Live Demo
+                </Button>
+              </CardActions>
             </Card>
           </Grid>
-           {/* Project 2 */}
-           <Grid item xs={12} sm={8} md={6}>
+          {/* Project 2 */}
+          <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -95,22 +97,21 @@ const Portfolio = () => {
                     lk
                   </Typography>
                 </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Share
-                  </Button>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Live Demo
-                  </Button>
-                </CardActions>
-              
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  {" "}
+                  Share
+                </Button>
+                <Button size="small" color="primary">
+                  {" "}
+                  Live Demo
+                </Button>
+              </CardActions>
             </Card>
           </Grid>
-            {/* Project 3 */}
-            <Grid item xs={12} sm={8} md={6}>
+          {/* Project 3 */}
+          <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -132,22 +133,21 @@ const Portfolio = () => {
                     lk
                   </Typography>
                 </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Share
-                  </Button>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Live Demo
-                  </Button>
-                </CardActions>
-              
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  {" "}
+                  Share
+                </Button>
+                <Button size="small" color="primary">
+                  {" "}
+                  Live Demo
+                </Button>
+              </CardActions>
             </Card>
           </Grid>
-           {/* Project 4 */}
-           <Grid item xs={12} sm={8} md={6}>
+          {/* Project 4 */}
+          <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -169,18 +169,17 @@ const Portfolio = () => {
                     lk
                   </Typography>
                 </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Share
-                  </Button>
-                  <Button size="small" color="primary">
-                    {" "}
-                    Live Demo
-                  </Button>
-                </CardActions>
-              
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  {" "}
+                  Share
+                </Button>
+                <Button size="small" color="primary">
+                  {" "}
+                  Live Demo
+                </Button>
+              </CardActions>
             </Card>
           </Grid>
         </Grid>
