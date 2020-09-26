@@ -13,12 +13,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">PORTFOLIO</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
-    <br />
-    <a href="https://github.com/AnneQuinkenstein/portfolio2"><strong>Explore the docs »</strong></a>
+    Website to get a short glance at my work-life: my work experiance, some of my projects, a possibility to get in touch
     <br />
     <br />
     <a href="https://github.com/AnneQuinkenstein/portfolio2">View Demo</a>
