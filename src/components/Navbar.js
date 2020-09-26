@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(5),
   },
   listItem: {
-    color: "#3080d6",
+    color: "#26bef8",
   },
 }));
 
@@ -108,8 +108,8 @@ const Navbar = () => {
         <AppBar position="static" style={{ background: "black" }}>
           <Toolbar style={{ justifyContent: "flex-end" }}>
             <IconButton onClick={toggleSlider("right", true)}>
-              <Typography variant="h5" style={{ color: "#3080d6", margin: "0 250px 0 auto" }}>
-                Explore
+              <Typography variant="h5" style={{ color: "#3080d6", margin: "0 200px 0 auto" }}>
+                explore
               </Typography>
             </IconButton>
             <MobileRightMenuSlider

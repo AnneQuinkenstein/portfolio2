@@ -36,7 +36,8 @@ const Portfolio = () => {
           {/* Project 1 */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
-              <CardActionArea>
+              <CardActionArea  href="https://game-night-aquin.netlify.app/"
+                  target="_blank">
                 <CardMedia
                   component="img"
                   alt="Project 1"
@@ -45,22 +46,22 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    Project 1
+                    Game Site with React || Context || SCSS || HTML5
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
-                  >
-                    lorem3 asdfkl ölkjas fölkj aöldkfj asdfökljasöldfkj ölaksjdf
-                    lk
+                  > Game Night is to have fun alone or with friends, even through a pandemic. You can play a hangman game with movie titles and when guessing wrong you get to see a giphy - so loosing it not so bad. 
+                  I used Context for the project to handle passing the logic of the game all around. 
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary"  href="https://github.com/AnneQuinkenstein/game_night"
+                  target="_blank">
                   {" "}
-                  Share
+                  Code
                 </Button>
                 <Button
                   size="small"
@@ -86,7 +87,7 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    Project 2
+                    ECommerce Site with React || Router6 
                   </Typography>
                   <Typography
                     variant="body2"
@@ -99,11 +100,13 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary" href="https://github.com/AnneQuinkenstein/animals_choice"
+                  target="_blank">
                   {" "}
-                  Share
+                  Code
                 </Button>
-                <Button size="small" color="primary">
+                <Button size="small" color="primary"  href="https://aquin-animals-choice.netlify.app/"
+                  target="_blank">
                   {" "}
                   Live Demo
                 </Button>

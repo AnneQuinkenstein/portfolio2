@@ -12,9 +12,9 @@ const useStyles = makeStyles({
             maxWidth: 250, 
         },
         "& .MuiSvgIcon-root": {
-            fill: "tan", 
+            fill: "lightgrey", 
             "&:hover": {
-                fill: 'tomato', 
+                fill: '#26bef8', 
                 fontSize: "1.8rem",
             }
         }
@@ -31,16 +31,22 @@ const classes = useStyles();
       className={classes.root}
       style={{padding: 0}}
       icon={<LinkedInIcon/>}
+      href="https://www.linkedin.com/in/anne-quinkenstein"
+      target="_blank"
       ></BottomNavigationAction>
        <BottomNavigationAction
        className={classes.root}
       style={{padding: 0}}
       icon={<GitHubIcon/>}
+      href="https://github.com/annequinkenstein"
+      target="_blank"
       ></BottomNavigationAction>
        <BottomNavigationAction
       className={classes.root}
       style={{padding: 0}}
       icon={<ChromeReaderModeIcon/>}
+      href="https://dev.to/annequinkenstein"
+      target="_blank"
       ></BottomNavigationAction>
     </BottomNavigation>
   );
