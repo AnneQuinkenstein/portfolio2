@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
@@ -41,14 +41,41 @@ const InputField = withStyles({
 })(TextField);
 
 const Contact = () => {
-  const classes = useStyles();
+  const [status, setStatus] = useState();
+  const classes = useStyles("");
+
+  const submitForm = (ev) => {
+    console.log("submitted");
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  };
 
   return (
     <>
       <Box component="div" style={{ background: "#222833d4", height: "100vh" }}>
         <Navbar />
         <Grid container justify="center">
-          <Box component="form" className={classes.form}>
+          <Box
+            component="form"
+            className={classes.form}
+            onSubmit={submitForm}
+            action="https://formspree.io/maypzkgy"
+            method="POST"
+          >
             <Typography
               variant="h5"
               style={{
@@ -91,7 +118,9 @@ const Contact = () => {
               variant="outlined"
               fullWidth={true}
               endIcon={<SendIcon />}
+              type="submit"
             >
+              {" "}
               contact me
             </Button>
           </Box>
