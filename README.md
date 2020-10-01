@@ -31,7 +31,7 @@
 - [React](https://reactjs.org/)
 - [Material UI](https://material-ui.com/)
 - [Formspree](https://formspree.io/)
-- [Axios](https://formspree.io/)
+
 
 ## Contact
 

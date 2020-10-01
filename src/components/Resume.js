@@ -48,22 +48,24 @@ const useStyles = makeStyles((theme) => ({
       right: "-0.625rem",
       top: "calc(50% - 5px)",
       borderStyle: "solid",
-      borderColor: "rgb(48, 128, 214) rgb(48, 128, 214) transparent transparent",
+      borderColor:
+        "rgb(48, 128, 214) rgb(48, 128, 214) transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
     [theme.breakpoints.up("md")]: {
-      width: "44%",
-      margin: "1rem",
+      width: "41%",
+      margin: "1.5rem 5vw",
       "&:nth-of-type(2n)": {
         float: "right",
-        margin: "1rem",
+        margin: "1.5rem 5vw",
         borderColor: "#26bef8",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
-        borderColor: "transparent transparent rgb(48, 128, 214) rgb(48, 128, 214)",
+        borderColor:
+          "transparent transparent rgb(48, 128, 214) rgb(48, 128, 214)",
       },
     },
   },
@@ -93,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: "rgb(48, 128, 214)",
-    padding: "3rem 0",
+    padding: "1rem 0",
     textTransform: "uppercase",
   },
   subHeading: {
@@ -119,20 +121,46 @@ const Resume = () => {
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
             {" "}
-            2013{" "}
+            present
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" className={classes.subHeading}>
-              webdesign
+              Quality Assurance Process Development
             </Typography>
             <Typography variant="body1" style={{ color: "#26bef8" }}>
-              web design lkaösfjölskdj f
+              Test Manager
             </Typography>
-            <Typography variant="subtitle1" style={{ color: "rgb(193, 227, 240)" }}>
-              Lorem ipsum akl sf ljlaösdfk lkj ölfakj aslkfjlkasdlfkj
-              alksdjflkajdfölkljhfakjhakljf ljsdfl
-              sdafkjlsdlöakjfölaksjdfölkjsaölfkjölkajdsfljslkdfj
-              asdlfkjölsakjflkjsdf
+            <Typography
+              variant="subtitle1"
+              style={{ color: "rgb(193, 227, 240)" }}
+            >
+              Responsible for Quality Assurance Department<br/>Introduced agile
+              Testing and designed integration of business teams
+              through company transition from waterfall to agile development
+            </Typography>
+          </Box>
+
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            {" "}
+            2017{" "}
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography variant="h5" className={classes.subHeading}>
+              Testmanagement CRM, Billing, ERP & other Systems
+            </Typography>
+            <Typography variant="body1" style={{ color: "#26bef8" }}>
+              Consultant Quality Management & Process Management 
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              style={{ color: "rgb(193, 227, 240)" }}
+            >
+              Created the Quality Assurance Department in cooperation with
+              colleges and implemented a continuous improvement process
+              utilizing HP ALM & JIRA <br/> Introduced API-Testing with Postman
             </Typography>
           </Box>
           <Typography
@@ -140,22 +168,31 @@ const Resume = () => {
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
             {" "}
-            2013{" "}
+            2014
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" className={classes.subHeading}>
-              css & html
+              Functional Software Testing
             </Typography>
             <Typography variant="body1" style={{ color: "#26bef8" }}>
-              web design lkaösfjölskdj f
+              Senior QA Test Analyst 
             </Typography>
-            <Typography variant="subtitle1" style={{ color: "rgb(193, 227, 240)" }}>
-              Lorem ipsum akl sf ljlaösdfk lkj ölfakj aslkfjlkasdlfkj
-              alksdjflkajdfölkljhfakjhakljf ljsdfl
-              sdafkjlsdlöakjfölaksjdfölkjsaölfkjölkajdsfljslkdfj
-              asdlfkjölsakjflkjsdf
+            <Typography
+              variant="subtitle1"
+              style={{ color: "rgb(193, 227, 240)" }}
+            >
+              Reviewed and clarified business requirement <br/> Investigated root
+              cause of issues by reporting defects utilizing Mantis for defect
+              workflow
             </Typography>
           </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            {" "}
+            2013
+          </Typography>
         </Box>
       </Box>
     </>
