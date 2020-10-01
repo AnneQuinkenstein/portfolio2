@@ -105,7 +105,7 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "black" }}>
+        <AppBar position="fixed" style={{ background: "black" }}>
           <Toolbar style={{ justifyContent: "flex-end" }}>
             <IconButton onClick={toggleSlider("right", true)}>
               <Typography variant="h5" style={{ color: "#3080d6", margin: "0 200px 0 auto" }}>
@@ -122,6 +122,7 @@ const Navbar = () => {
             </MobileRightMenuSlider>
           </Toolbar>
         </AppBar>
+        <Toolbar/>
       </Box>
     </>
   );

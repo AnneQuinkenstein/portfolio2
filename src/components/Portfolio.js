@@ -75,15 +75,17 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/AnneQuinkenstein/game_night"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {" "}
                   Code
                 </Button>
                 <Button
                   size="small"
+                  color="primary"
                   href="https://game-night-aquin.netlify.app/"
                   target="_blank"
-                  color="primary"
+                  rel="noopener noreferrer"
                 >
                   {" "}
                   Live Demo
@@ -122,11 +124,23 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AnneQuinkenstein/weather_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
-                  Share
+                  Code
                 </Button>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://weather-aquin.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
                   Live Demo
                 </Button>
@@ -168,6 +182,7 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/AnneQuinkenstein/animals_choice"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {" "}
                   Code
@@ -177,6 +192,7 @@ const Portfolio = () => {
                   color="primary"
                   href="https://aquin-animals-choice.netlify.app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {" "}
                   Live Demo
@@ -214,11 +230,23 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://aquin-todolist.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
-                  Share
+                  Code
                 </Button>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AnneQuinkenstein/list"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {" "}
                   Live Demo
                 </Button>
