@@ -62,9 +62,8 @@ const Portfolio = () => {
                     Play a hangman game with movie titles in your favorite
                     Language! For each wrong guess a associated giphy is
                     revealed - failure is not bad :) If you win, a Giphy
-                    Carousel is wating fo you. I used Context to pass the logic
-                    of the game & did some animations utilizing SCSS - will you
-                    find a easteregg? With Formspree the Input of the
+                    Carousel is wating fo you. I used Context as a state container & did some animations utilizing SCSS - will you
+                    find an easteregg? With Formspree the Input of the
                     Contactform is sent to my Email.
                   </Typography>
                 </CardContent>
