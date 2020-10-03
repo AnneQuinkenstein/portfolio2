@@ -31,6 +31,7 @@
 - [React](https://reactjs.org/)
 - [Material UI](https://material-ui.com/)
 - [Formspree](https://formspree.io/)
+- [Particles](https://www.npmjs.com/package/react-particles-js)
 
 
 ## Contact
