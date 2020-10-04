@@ -17,7 +17,7 @@
   </a>
 
   <p align="center">
-    Website to get a short glance at my work-life: my work experiance, some of my projects, a possibility to get in touch
+   Website to get a short glance at my work-life: my work experience, some of my projects, a possibility to get in touch 
     <br />
     <br />
     <a href="https://anne-quinkenstein.netlify.app/">Demo</a>
