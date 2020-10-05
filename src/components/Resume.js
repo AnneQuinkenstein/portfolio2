@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
       content: "''",
       position: "absolute",
       height: "100%",
-      border: "1px solid #26bef8",
+      border: "1px solid rgb(48, 128, 214)",
       right: "40px",
       top: 0,
     },
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   timeLineItem: {
     padding: "1rem",
-    borderBottom: "2px solid #26bef8",
+    borderBottom: "2px solid rgb(48, 128, 214)",
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
       top: "calc(50% - 5px)",
       borderStyle: "solid",
       borderColor:
-        "rgb(48, 128, 214) rgb(48, 128, 214) transparent transparent",
+        "rgb(19, 90, 157) rgb(19, 90, 157) transparent transparent",
       borderWidth: "0.625rem",
       transform: "rotate(45deg)",
     },
@@ -59,13 +59,13 @@ const useStyles = makeStyles((theme) => ({
       "&:nth-of-type(2n)": {
         float: "right",
         margin: "1.5rem 5vw",
-        borderColor: "#26bef8",
+        borderColor: "rgb(48, 128, 214)",
       },
       "&:nth-of-type(2n):before": {
         right: "auto",
         left: "-0.625rem",
         borderColor:
-          "transparent transparent rgb(48, 128, 214) rgb(48, 128, 214)",
+          "transparent transparent rgb(19, 90, 157) rgb(19, 90, 157)",
       },
     },
   },
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
     fontSize: "1.8rem",
-    background: "rgb(48, 128, 214)",
+    background: "rgb(19, 90, 157)",
     color: "white",
     lineHeight: 1,
     padding: "0.5rem 0 1rem",
