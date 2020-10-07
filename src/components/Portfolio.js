@@ -16,6 +16,7 @@ import project1 from "../images/gamenight.png";
 import project2 from "../images/exommerce.png";
 import project3 from "../images/weatherapp.png";
 import project4 from "../images/nottodolist.png";
+import project5 from "../images/NokiaHackatonGroup2.gif";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -88,6 +89,16 @@ const Portfolio = () => {
                 >
                   {" "}
                   Live Demo
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://app.box.com/s/2mbfie0ysains6t0ckd4nggvz6qlj46a"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Presentation
                 </Button>
               </CardActions>
             </Card>
@@ -248,6 +259,68 @@ const Portfolio = () => {
                 >
                   {" "}
                   Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+
+          {/* Project 5 */}
+          <Grid item xs={12} sm={8} md={6}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea
+                href="https://hackaton-group2-deploy-nokia.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CardMedia
+                  component="img"
+                  alt="Project 3"
+                  height="140"
+                  image={project5}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    React || NOKIA API || 24h Hackathon
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                   NOKIA Hackaton, Landing Page for Nokia Feature Phones using a NOKIA Phone API
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/nokia-hackathon-group2/nokia-hackathon-group-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Code
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://hackaton-group2-deploy-nokia.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Live Demo
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://app.box.com/s/6ui78vy4qjoi95jsptw0rcht67wswl33"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Presentation
                 </Button>
               </CardActions>
             </Card>
