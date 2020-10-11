@@ -12,12 +12,12 @@ import {
   Typography,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
-import project1 from "../images/gamenight.png";
-import project2 from "../images/exommerce.png";
-import project3 from "../images/weatherapp.png";
-import project4 from "../images/nottodolist.png";
-import project5 from "../images/NokiaHackathon.png";
-import project6 from "../images/remoteSchool.png";
+import gamenight from "../images/gamenight.png";
+import animalsChoice from "../images/ecommerce.png";
+import weatherapp from "../images/weatherapp.png";
+import nottodolist from "../images/nottodolist.png";
+import NokiaHackathon from "../images/NokiaHackathon.png";
+import remoteSchool from "../images/remoteSchool.png";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -37,7 +37,7 @@ const Portfolio = () => {
       <Box component="div" className={classes.mainContainer}>
         <Navbar />
         <Grid container justify="center">
-          {/* Project 1 */}
+          {/* Project 1 Gamenight */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea
@@ -47,9 +47,9 @@ const Portfolio = () => {
               >
                 <CardMedia
                   component="img"
-                  alt="Project 1"
+                  alt="Gamenight Frontpage"
                   height="140"
-                  image={project1}
+                  image={gamenight}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
@@ -105,7 +105,62 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-          {/* Project 2 */}
+            {/* Project 2 - Weatherapp */}
+            <Grid item xs={12} sm={8} md={6}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea
+                href="https://weather-aquin.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CardMedia
+                  component="img"
+                  alt="Weatherapp Frontpage"
+                  height="140"
+                  image={weatherapp}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    React || Geo Location || React Animation Group
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    If you allow to grab your Device Location or type in a City
+                    of your Choice, the WeatherApp will display the weather of
+                    today in a moving cloud & a 5-days forecast. A picture of
+                    the weather accourding to day or nighttime will appear in
+                    the background.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AnneQuinkenstein/weather_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Code
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://weather-aquin.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          {/* Project 3 Animals Choice */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea
@@ -115,9 +170,9 @@ const Portfolio = () => {
               >
                 <CardMedia
                   component="img"
-                  alt="Project 2"
+                  alt="Project ecommerce Frontpage"
                   height="140"
-                  image={project2}
+                  image={animalsChoice}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
@@ -129,8 +184,8 @@ const Portfolio = () => {
                     component="p"
                   >
                     ECommerce Site stuffed with animal toys provided by HEROKU
-                    API. Display Item on single Page with Router. Add and delete
-                    an Item from the Cart + monitor the total Price.
+                    API. Display Item on single page with new Router V6. Add and
+                    delete Items everywhere + monitor the total Price.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -158,7 +213,7 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-          {/* Project 5 */}
+          {/* Project 4 Nokia Hackathon */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea
@@ -168,9 +223,9 @@ const Portfolio = () => {
               >
                 <CardMedia
                   component="img"
-                  alt="Project 3"
+                  alt="NokiaHackathon Frontpage"
                   height="140"
-                  image={project5}
+                  image={NokiaHackathon}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
@@ -220,7 +275,60 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-          {/* Project 6 */}
+             {/* Project 5 Not-to-doList*/}
+             <Grid item xs={12} sm={8} md={6}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea
+                href="https://aquin-todolist.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CardMedia
+                  component="img"
+                  alt="nottodolist"
+                  height="140"
+                  image={nottodolist}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    React || Strapi || Animation Groups
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    CRUD Create, Update & Delete PostIt's to personalize your
+                    Not to Do List! A Whiteboard with a lot of Not to do
+                    PostIt's - getting rid of Duties might be a Duty as well.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://aquin-todolist.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Code
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/AnneQuinkenstein/list"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          {/* Project 6 Remote-School */}
           <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea
@@ -230,9 +338,9 @@ const Portfolio = () => {
               >
                 <CardMedia
                   component="img"
-                  alt="Project 6"
+                  alt="remoteSchool Frontpage"
                   height="140"
-                  image={project6}
+                  image={remoteSchool}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
@@ -278,113 +386,6 @@ const Portfolio = () => {
                 >
                   {" "}
                   Presentation
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-          {/* Project 3 */}
-          <Grid item xs={12} sm={8} md={6}>
-            <Card className={classes.cardContainer}>
-              <CardActionArea
-                href="https://weather-aquin.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <CardMedia
-                  component="img"
-                  alt="Project 3"
-                  height="140"
-                  image={project3}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5">
-                    React || Geo Location || React Animation Group
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    If you allow to grab your Location or type in a City of your
-                    Choice, Weather or not will display the weather of today in
-                    a moving cloud & a 5 days forecast A picture of the weather
-                    accourding day or nighttime will appear in the background.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AnneQuinkenstein/weather_app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Code
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://weather-aquin.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Live Demo
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-          {/* Project 4 */}
-          <Grid item xs={12} sm={8} md={6}>
-            <Card className={classes.cardContainer}>
-              <CardActionArea
-                href="https://aquin-todolist.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <CardMedia
-                  component="img"
-                  alt="Project 4"
-                  height="140"
-                  image={project4}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5">
-                    React || Strapi || Animation Groups
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    CRUD Create, Update & Delete PostIt's to personalize your
-                    Not to Do List! A Whiteboard with a lot of Not to do
-                    PostIt's - getting rid of Duties might be a Duty as well.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://aquin-todolist.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Code
-                </Button>
-                <Button
-                  size="small"
-                  color="primary"
-                  href="https://github.com/AnneQuinkenstein/list"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Live Demo
                 </Button>
               </CardActions>
             </Card>
