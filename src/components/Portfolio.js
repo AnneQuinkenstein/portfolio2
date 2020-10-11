@@ -62,12 +62,12 @@ const Portfolio = () => {
                   >
                     {" "}
                     Play a hangman game with movie titles in your favorite
-                    Language! For each wrong guess a associated giphy is
-                    revealed - failure is not bad :) If you win, a Giphy
-                    Carousel is wating fo you. I used Context as a state
+                    language! For each wrong guess a associated Giphy is
+                    revealed - failure is not bad :) If you win, a movieposter & gifs
+                    carousel is wating fo you. I used Context as a state
                     container & did some animations utilizing SCSS - will you
-                    find an easteregg? With Formspree the Input of the
-                    Contactform is sent to my Email.
+                    find an easteregg? With Formspree the input of the
+                    contact form is sent to my email.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -121,17 +121,17 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    React || Geo Location || React Animation Group
+                    React || Geo Location || React Transition Group
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    If you allow to grab your Device Location or type in a City
-                    of your Choice, the WeatherApp will display the weather of
-                    today in a moving cloud & a 5-days forecast. A picture of
-                    the weather accourding to day or nighttime will appear in
+                    If the app is allowed to grab your device` location or type in a city
+                    of your choice, the WeatherApp will display the weather of
+                    today in a moving cloud and a 5-days forecast. A picture of
+                    the weather accourding to day- or nighttime will appear in
                     the background.
                   </Typography>
                 </CardContent>
@@ -183,9 +183,9 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    ECommerce Site stuffed with animal toys provided by HEROKU
-                    API. Display Item on single page with new Router V6. Add and
-                    delete Items everywhere + monitor the total Price.
+                    ECommerce site stuffed with animal toys provided by Heroku
+                    API. Display an item on a single page with new Router V6. Add and
+                    delete items everywhere in the app & monitor the total price.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -236,8 +236,8 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    NOKIA Hackaton, Landing Page for Nokia Feature Phones using
-                    a NOKIA Phone API
+                    NOKIA Hackaton: Create a working landing page for Nokia Feature Phones using
+                    a NOKIA phone API in 24 hours with your 2 teammates (Desctop Version)! Done!
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -291,16 +291,16 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    React || Strapi || Animation Groups
+                    React || Strapi || Transition Group
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    CRUD Create, Update & Delete PostIt's to personalize your
-                    Not to Do List! A Whiteboard with a lot of Not to do
-                    PostIt's - getting rid of Duties might be a Duty as well.
+                    CRUD Create, Update & Delete postIt's to personalize your
+                    Not-to-Do-List! A whiteboard with a lot of Not-to-Do
+                    postIt's - getting rid of duties might be a duty as well.
                   </Typography>
                 </CardContent>
               </CardActionArea>
