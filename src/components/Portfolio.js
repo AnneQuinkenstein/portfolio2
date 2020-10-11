@@ -105,8 +105,8 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-           {/* Project 2 */}
-           <Grid item xs={12} sm={8} md={6}>
+          {/* Project 2 */}
+          <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea
                 href="https://aquin-animals-choice.netlify.app/"
@@ -158,8 +158,8 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-                    {/* Project 5 */}
-                    <Grid item xs={12} sm={8} md={6}>
+          {/* Project 5 */}
+          <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
               <CardActionArea
                 href="https://hackaton-group2-deploy-nokia.netlify.app/"
@@ -236,7 +236,7 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    HTML || CSS
+                    HTML || CSS || FLEXBOX
                   </Typography>
                   <Typography
                     variant="body2"
