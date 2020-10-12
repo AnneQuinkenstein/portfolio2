@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
-import Navbar from "./Navbar";
 import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
@@ -78,10 +77,13 @@ const Contact = () => {
 
   return (
     <>
-      <Box component="div" style={{ background: "#222833d4", height: "100vh" }}>
-        <Navbar />
+      <Box component="div" style={{ height: "100vh", position: "relative" }}>
         <Grid container justify="center">
-          <Box component="form" className={classes.form} onSubmit={handleOnSubmit}>
+          <Box
+            component="form"
+            className={classes.form}
+            onSubmit={handleOnSubmit}
+          >
             <Typography
               variant="h5"
               style={{
@@ -99,7 +101,8 @@ const Contact = () => {
               inputProps={{ style: { color: "white" } }}
               margin="dense"
               size="medium"
-              id="message" name="message"
+              id="message"
+              name="message"
             />
             <br />
             <InputField
@@ -110,16 +113,22 @@ const Contact = () => {
               margin="dense"
               size="medium"
               type="email"
+              id="email"
+              name="email"
             />
             <br />
             <InputField
               fullWidth={true}
+              fullHeight={true}
               label="Message"
               variant="outlined"
-              inputProps={{ style: { color: "white" } }}
+              multiline
+              rowsMax={8}
+              inputProps={{ style: { color: "white", height: '10vh' } }}
               margin="dense"
               size="medium"
-              id="message" name="message"
+              id="message"
+              name="message"
             />
             <br />
             <Button
@@ -127,17 +136,17 @@ const Contact = () => {
               variant="outlined"
               fullWidth={true}
               endIcon={<SendIcon />}
-              type="submit" 
+              type="submit"
               disabled={serverState.submitting}
             >
               {" "}
               contact me
             </Button>
             {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : "successMsg"} >
-            {serverState.status.msg}
-          </p>
-        )}
+              <p className={!serverState.status.ok ? "errorMsg" : "successMsg"}>
+                {serverState.status.msg}
+              </p>
+            )}
           </Box>
         </Grid>
       </Box>

@@ -1,12 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
-import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
-  mainContainer: {
-    background: "#222833d4",
-  },
+  // mainContainer: {
+  //   background: "#222833d4",
+  // },
   timeLine: {
     position: "relative",
     padding: "1rem",
@@ -14,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     "&:before": {
       content: "''",
       position: "absolute",
-      height: "100%",
+      height: "96%",
       border: "1px solid rgb(48, 128, 214)",
       right: "40px",
       top: 0,
@@ -109,7 +108,6 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <>
-      <Navbar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
           {" "}

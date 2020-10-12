@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
+
 function App() {
   return (
     <>

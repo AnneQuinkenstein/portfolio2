@@ -11,7 +11,6 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
-import Navbar from "./Navbar";
 import gamenight from "../images/gamenight.png";
 import animalsChoice from "../images/ecommerce.png";
 import weatherapp from "../images/weatherapp.png";
@@ -21,7 +20,7 @@ import remoteSchool from "../images/remoteSchool.png";
 
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#222833d4",
+    // background: "#222833d4",
     height: "100%",
   },
   cardContainer: {
@@ -35,7 +34,6 @@ const Portfolio = () => {
   return (
     <>
       <Box component="div" className={classes.mainContainer}>
-        <Navbar />
         <Grid container justify="center">
           {/* Project 1 Gamenight */}
           <Grid item xs={12} sm={8} md={6}>
