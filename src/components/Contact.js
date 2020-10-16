@@ -77,7 +77,7 @@ const Contact = () => {
 
   return (
     <>
-      <Box component="div" style={{ height: "100vh", position: "relative" }}>
+      <Box component="div" style={{ height: "100vh", position: "relative", backgroundColor: "#222833d4" }}>
         <Grid container justify="center">
           <Box
             component="form"

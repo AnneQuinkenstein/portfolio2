@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  // mainContainer: {
-  //   background: "#222833d4",
-  // },
+  mainContainer: {
+    background: "linear-gradient(to bottom, rgba(34, 40, 51, 0.3), #222833d4)",
+  },
   timeLine: {
     position: "relative",
     padding: "1rem",

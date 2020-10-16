@@ -1,31 +1,26 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Header from "./Header";
-import Contact from "./Contact";
-import Portfolio from "./Portfolio";
-import Resume from "./Resume";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/styles";
+import Header from "./Header";
+
 
 //CSS STYLES
 const useStyles = makeStyles({
-  particlesCanva: {
-    position: "absolute",
-    opacity: "0.5",
-  },
-  particle: {
-    height: "90vh",
-    width: "90vw",
-    position: "relative",
-  },
-});
+    particlesCanva: {
+      position: "absolute",
+      opacity: "0.5",
+    },
+    particle: {
+      height: "90vh",
+      width: "90vw",
+      position: "relative",
+    },
+  });
 
 const Home = () => {
-  const classes = useStyles();
-
+    const classes = useStyles();
   return (
     <>
-      <Navbar />
       <Header />
       <Particles
         className={classes.particle}
@@ -69,9 +64,6 @@ const Home = () => {
           },
         }}
       />
-      <Portfolio />
-      <Resume />
-      <Contact />
     </>
   );
 };
