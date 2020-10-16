@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AppBar,
   Toolbar,
@@ -7,12 +7,11 @@ import {
   Avatar,
   Divider,
   Box,
-  Link, 
+  Link,
 } from "@material-ui/core";
 import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../images/logo.png";
-
 
 //CSS Styles
 
@@ -28,14 +27,14 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(7),
   },
   link: {
-    width: '6%', 
-    display: 'flex',
+    width: "6%",
+    display: "flex",
     justifyContent: "flex-start",
-    marginLeft: '3rem',
+    marginLeft: "3rem",
   },
   listItem: {
     color: "#26bef8",
-    minWidth: '35px', 
+    minWidth: "35px",
   },
 }));
 
@@ -77,7 +76,12 @@ const Navbar = () => {
             />
             <Divider />
             {menuItems.map((lsItem, key) => (
-              <Link button key={key} href={lsItem.listPath} className={classes.link}>
+              <Link
+                button
+                key={key}
+                href={lsItem.listPath}
+                className={classes.link}
+              >
                 <ListItemIcon className={classes.listItem}>
                   {lsItem.listIcon}
                 </ListItemIcon>
