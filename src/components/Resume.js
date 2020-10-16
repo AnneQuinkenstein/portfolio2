@@ -1,11 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
-import Navbar from "./Navbar";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#222833d4",
+    background: "linear-gradient(to bottom, rgba(34, 40, 51, 0.3), #222833d4)",
+    height: '100vh',
   },
   timeLine: {
     position: "relative",
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     "&:before": {
       content: "''",
       position: "absolute",
-      height: "100%",
+      height: "96%",
       border: "1px solid rgb(48, 128, 214)",
       right: "40px",
       top: 0,
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     borderBottom: "2px solid rgb(48, 128, 214)",
     position: "relative",
-    margin: "1rem 3rem 1rem 1rem",
+    margin: "0",
     clear: "both",
     "&:after": {
       content: "''",
@@ -73,11 +73,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
+    fontSize: "1.6rem",
     background: "rgb(19, 90, 157)",
     color: "white",
     lineHeight: 1,
-    padding: "0.5rem 0 1rem",
+    padding: "0.3rem 0 0.7rem",
     "&:before": {
       display: "none",
     },
@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: "rgb(48, 128, 214)",
-    padding: "1rem 0",
+    padding: "1rem 0 0 0",
     textTransform: "uppercase",
   },
   subHeading: {
@@ -109,8 +109,8 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <>
-      <Navbar />
       <Box component="header" className={classes.mainContainer}>
+        <div style={{ height: '7vh' }}></div>
         <Typography variant="h4" align="center" className={classes.heading}>
           {" "}
           working experience{" "}
@@ -121,7 +121,7 @@ const Resume = () => {
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
             {" "}
-            present
+            today
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" className={classes.subHeading}>
@@ -136,7 +136,6 @@ const Resume = () => {
             >
               Responsible for Quality Assurance Department<br/>Introduced agile
               Testing and designed integration of business teams
-              through company transition from waterfall to agile development
             </Typography>
           </Box>
 
@@ -160,7 +159,7 @@ const Resume = () => {
             >
               Created the Quality Assurance Department in cooperation with
               colleges and implemented a continuous improvement process
-              utilizing HP ALM & JIRA <br/> Introduced API-Testing with Postman
+              utilizing HP ALM & JIRA <br/> 
             </Typography>
           </Box>
           <Typography
@@ -181,9 +180,7 @@ const Resume = () => {
               variant="subtitle1"
               style={{ color: "rgb(193, 227, 240)" }}
             >
-              Reviewed and clarified business requirement <br/> Investigated root
-              cause of issues by reporting defects utilizing Mantis for defect
-              workflow
+            Tested & Investigated root cause of issues 
             </Typography>
           </Box>
           <Typography
