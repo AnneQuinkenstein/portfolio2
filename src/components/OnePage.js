@@ -3,8 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Contact from "./Contact";
-import Portfolio1 from "./Portfolio1";
-import Portfolio2 from "./Portfolio2";
+import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import "../App.css";
 
@@ -13,7 +12,7 @@ const OnePage = () => (
     //fullpage options
     licenseKey={process.env.REACT_APP_FULLPAGE_API_KEY}
     scrollingSpeed={1000} /* Options here */
-    anchors={["Home", "Portfolio", "Portfolio2", "Resume", "Contact"]}
+    anchors={["Home", "Portfolio", "Resume", "Contact"]}
     responsiveWidth={1000}
     fixedElements={".MuiBox-root-5"}
     
@@ -27,16 +26,10 @@ const OnePage = () => (
               <Home />
             </div>
             <div
-              className="section fp-auto-height"
-              onClick={() => fullpageApi.moveSectionDown()}
+              className="section"
+              // onClick={() => fullpageApi.moveSectionDown()}
             >
-              <Portfolio1 />
-            </div>
-            <div
-              className="section fp-auto-height"
-              onClick={() => fullpageApi.moveSectionDown()}
-            >
-              <Portfolio2 />
+              <Portfolio />
             </div>
             <div
               className="section"

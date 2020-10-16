@@ -119,7 +119,7 @@ const Resume = () => {
             className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
             {" "}
-            present
+            today
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" className={classes.subHeading}>
@@ -134,7 +134,6 @@ const Resume = () => {
             >
               Responsible for Quality Assurance Department<br/>Introduced agile
               Testing and designed integration of business teams
-              through company transition from waterfall to agile development
             </Typography>
           </Box>
 
@@ -158,7 +157,7 @@ const Resume = () => {
             >
               Created the Quality Assurance Department in cooperation with
               colleges and implemented a continuous improvement process
-              utilizing HP ALM & JIRA <br/> Introduced API-Testing with Postman
+              utilizing HP ALM & JIRA <br/> 
             </Typography>
           </Box>
           <Typography
@@ -179,9 +178,7 @@ const Resume = () => {
               variant="subtitle1"
               style={{ color: "rgb(193, 227, 240)" }}
             >
-              Reviewed and clarified business requirement <br/> Investigated root
-              cause of issues by reporting defects utilizing Mantis for defect
-              workflow
+            Tested & Investigated root cause of issues 
             </Typography>
           </Box>
           <Typography
