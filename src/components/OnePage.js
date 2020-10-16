@@ -1,9 +1,9 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Navbar from "./Navbar";
-import Home from "./Home";
+import OnePageHome from "./OnePageHome";
 import Contact from "./Contact";
-import Portfolio from "./Portfolio";
+import OnePagePortfolio from "./OnePagePortfolio";
 import Resume from "./Resume";
 import "../App.css";
 
@@ -23,13 +23,12 @@ const OnePage = () => (
           <ReactFullpage.Wrapper>
             <div className="section">
               <Navbar />
-              <Home />
+              <OnePageHome />
             </div>
             <div
               className="section"
-              // onClick={() => fullpageApi.moveSectionDown()}
             >
-              <Portfolio />
+              <OnePagePortfolio />
             </div>
             <div
               className="section"

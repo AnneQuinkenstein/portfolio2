@@ -61,7 +61,7 @@ const menuItems = [
   },
 ];
 
-const Navbar = () => {
+const RespNavbar = () => {
   const [state, setState] = useState({
     right: false,
   });
@@ -128,4 +128,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default RespNavbar;

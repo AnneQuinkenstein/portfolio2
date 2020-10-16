@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useMediaPredicate } from "react-media-hook";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import axios from "axios";
+import RespNavbar from "./RespNavbar";
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -46,6 +48,8 @@ const Contact = () => {
     status: null,
   });
 
+  const phone = useMediaPredicate("(max-width: 1000px)");
+
   const classes = useStyles("");
 
   const handleServerResponse = (ok, msg, form) => {
@@ -78,6 +82,7 @@ const Contact = () => {
   return (
     <>
       <Box component="div" style={{ height: "100vh", position: "relative", backgroundColor: "#222833d4" }}>
+      {phone && <RespNavbar/>}
         <Grid container justify="center">
           <Box
             component="form"

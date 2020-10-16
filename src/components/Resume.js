@@ -1,6 +1,8 @@
 import React from "react";
+import { useMediaPredicate } from "react-media-hook";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
+import RespNavbar from "./RespNavbar";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -107,9 +109,12 @@ const useStyles = makeStyles((theme) => ({
 
 const Resume = () => {
   const classes = useStyles();
+  const phone = useMediaPredicate("(max-width: 1000px)");
+
   return (
     <>
       <Box component="header" className={classes.mainContainer}>
+         {phone && <RespNavbar />}
         <div style={{ height: '7vh' }}></div>
         <Typography variant="h4" align="center" className={classes.heading}>
           {" "}
