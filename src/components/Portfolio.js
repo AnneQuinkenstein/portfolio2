@@ -31,6 +31,8 @@ const useStyles = makeStyles((theme) => ({
     flex: "0 0 300px",
     flexDirection: "column",
     overflow: "hidden",
+    height: '100vh', 
+    justifyContent: "center",
   },
   cardContainer: {
     maxWidth: 345,
