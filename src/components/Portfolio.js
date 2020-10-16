@@ -362,8 +362,8 @@ const Portfolio = () => {
                     component="p"
                   >
                     {" "}
-                    NOKIA Hackaton: Create a working landing page for Nokia
-                    Feature Phones using a NOKIA phone API in 24 hours with your
+                    NOKIA Hackaton: Created a working landing page for Nokia
+                    Feature Phones using a NOKIA phone API in 24 hours with my
                     2 teammates (Desctop Version)! Done!
                   </Typography>
                 </CardContent>
