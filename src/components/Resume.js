@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     "&:before": {
       content: "''",
       position: "absolute",
-      height: "96%",
+      height: "94%",
       border: "1px solid rgb(48, 128, 214)",
       right: "40px",
       top: 0,
