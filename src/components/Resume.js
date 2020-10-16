@@ -5,6 +5,7 @@ import { Typography, Box } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "linear-gradient(to bottom, rgba(34, 40, 51, 0.3), #222833d4)",
+    height: '100vh',
   },
   timeLine: {
     position: "relative",
@@ -35,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     borderBottom: "2px solid rgb(48, 128, 214)",
     position: "relative",
-    margin: "1rem 3rem 1rem 1rem",
+    margin: "0",
     clear: "both",
     "&:after": {
       content: "''",
@@ -72,11 +73,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     maxWidth: "9.375rem",
     margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
+    fontSize: "1.6rem",
     background: "rgb(19, 90, 157)",
     color: "white",
     lineHeight: 1,
-    padding: "0.5rem 0 1rem",
+    padding: "0.3rem 0 0.7rem",
     "&:before": {
       display: "none",
     },
@@ -94,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: "rgb(48, 128, 214)",
-    padding: "1rem 0",
+    padding: "1rem 0 0 0",
     textTransform: "uppercase",
   },
   subHeading: {
@@ -109,6 +110,7 @@ const Resume = () => {
   return (
     <>
       <Box component="header" className={classes.mainContainer}>
+        <div style={{ height: '7vh' }}></div>
         <Typography variant="h4" align="center" className={classes.heading}>
           {" "}
           working experience{" "}
