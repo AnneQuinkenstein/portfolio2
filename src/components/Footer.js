@@ -33,6 +33,7 @@ const classes = useStyles();
       icon={<LinkedInIcon/>}
       href="https://www.linkedin.com/in/anne-quinkenstein"
       target="_blank"
+      rel="noopener noreferrer"
       ></BottomNavigationAction>
        <BottomNavigationAction
        className={classes.root}
@@ -40,6 +41,7 @@ const classes = useStyles();
       icon={<GitHubIcon/>}
       href="https://github.com/annequinkenstein"
       target="_blank"
+      rel="noopener noreferrer"
       ></BottomNavigationAction>
        <BottomNavigationAction
       className={classes.root}
@@ -47,6 +49,7 @@ const classes = useStyles();
       icon={<ChromeReaderModeIcon/>}
       href="https://dev.to/annequinkenstein"
       target="_blank"
+      rel="noopener noreferrer"
       ></BottomNavigationAction>
     </BottomNavigation>
   );

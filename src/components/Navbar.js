@@ -12,15 +12,14 @@ import {
 import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../images/logo.png";
+import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
+import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 //CSS Styles
 
 const useStyles = makeStyles((theme) => ({
-  menuSliderContainer: {
-    width: 250,
-    background: "black",
-    height: "100%",
-  },
   avatar: {
     display: "block",
     width: theme.spacing(7),
@@ -35,6 +34,19 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     color: "#26bef8",
     minWidth: "35px",
+  },
+  root: {
+    "& .MuiBottomNavigationAction-root": {
+      minWidth: 0,
+      maxWidth: 250,
+    },
+    "& .MuiSvgIcon-root": {
+      fill: "lightgrey",
+      "&:hover": {
+        fill: "#26bef8",
+        fontSize: "1.8rem",
+      },
+    },
   },
 }));
 
@@ -74,7 +86,7 @@ const Navbar = () => {
               src={avatar}
               alt="Anne Quinkenstein"
             />
-            <Divider />
+          
             {menuItems.map((lsItem, key) => (
               <Link
                 button
@@ -91,7 +103,34 @@ const Navbar = () => {
                 />
               </Link>
             ))}
-          </Toolbar>
+                <Divider />
+             <BottomNavigation width="auto" style={{ background: "transparent", marginLeft: "auto" }}>
+            <BottomNavigationAction
+              className={classes.root}
+              style={{ padding: 0 }}
+              icon={<LinkedInIcon />}
+              href="https://www.linkedin.com/in/anne-quinkenstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></BottomNavigationAction>
+            <BottomNavigationAction
+              className={classes.root}
+              style={{ padding: 0 }}
+              icon={<GitHubIcon />}
+              href="https://github.com/annequinkenstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></BottomNavigationAction>
+            <BottomNavigationAction
+              className={classes.root}
+              style={{ padding: 0 }}
+              icon={<ChromeReaderModeIcon />}
+              href="https://dev.to/annequinkenstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></BottomNavigationAction>
+            </BottomNavigation>
+            </Toolbar>
         </AppBar>
         <Toolbar />
       </Box>

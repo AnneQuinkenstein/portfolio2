@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     padding: "1rem",
     margin: "0 auto",
+    marginRight: "1rem",
     "&:before": {
       content: "''",
       position: "absolute",
@@ -113,7 +114,7 @@ const Resume = () => {
 
   return (
     <>
-      <Box component="header" className={classes.mainContainer}>
+      <Box component="header" className={classes.mainContainer} style={{ overflow: !phone && "hidden" }}>
          {phone && <RespNavbar />}
         <div style={{ height: '7vh' }}></div>
         <Typography variant="h4" align="center" className={classes.heading}>
