@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     marginLeft: "3rem",
+    "&:hover": {
+      textDecoration: "none",
+    },
   },
   listItem: {
     color: "lightgrey",
@@ -81,7 +84,7 @@ const Navbar = () => {
     <>
       <Box component="nav" className={classes.navbar}>
         <AppBar style={{ background: "black", opacity: "0.8" }}>
-          <Toolbar style={{ justifyContent: "center"}}>
+          <Toolbar style={{ justifyContent: "center" }}>
             <BottomNavigation
               width="auto"
               style={{ background: "transparent", marginRight: "auto" }}
