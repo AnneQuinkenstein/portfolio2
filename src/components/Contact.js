@@ -81,7 +81,7 @@ const Contact = () => {
 
   return (
     <>
-      <Box component="div" style={{ height: "100vh", position: "relative", backgroundColor: "#222833d4" }}>
+      <Box component="div" style={{ height: "100vh", position: "relative", backgroundColor: "#222833d4", paddingBottom: 0, marginBottom: 0}}>
       {phone && <RespNavbar/>}
         <Grid container justify="center">
           <Box

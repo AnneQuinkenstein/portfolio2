@@ -21,8 +21,9 @@ import RespNavbar from "./RespNavbar";
 
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#222833d4",
-    height: "100%",
+    background:
+      "linear-gradient(to bottom, rgba(34, 40, 51, 0),rgba(34, 40, 51, 0.3))",
+    height: "min-Content",
   },
   cardContainer: {
     maxWidth: 345,

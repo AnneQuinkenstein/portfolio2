@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
-  ListItem,
   ListItemIcon,
   IconButton,
   ListItemText,
   Avatar,
   Divider,
-  List,
   Typography,
   Box,
+  Link,
 } from "@material-ui/core";
 import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
@@ -42,22 +40,22 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
-    listPath: "/",
+    listPath: "#Home",
   },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
-    listPath: "/portfolio",
+    listPath: "#Portfolio",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
-    listPath: "/resume",
+    listPath: "#Resume",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contact",
-    listPath: "/contact",
+    listPath: "#Contact",
   },
 ];
 
@@ -85,19 +83,18 @@ const RespNavbar = () => {
           alt="Anne Quinkenstein"
         />
         <Divider />
-        <List>
-          {menuItems.map((lsItem, key) => (
-            <ListItem button key={key} component={Link} to={lsItem.listPath}>
-              <ListItemIcon className={classes.listItem}>
-                {lsItem.listIcon}
-              </ListItemIcon>
-              <ListItemText
-                className={classes.listItem}
-                primary={lsItem.listText}
-              />
-            </ListItem>
-          ))}
-        </List>
+
+        {menuItems.map((lsItem, key) => (
+         <Link key={key} href={lsItem.listPath} className={classes.link}>
+            <ListItemIcon className={classes.listItem}>
+              {lsItem.listIcon}
+            </ListItemIcon>
+            <ListItemText
+              className={classes.listItem}
+              primary={lsItem.listText}
+            />
+          </Link>
+        ))}
       </Box>
     );
   };

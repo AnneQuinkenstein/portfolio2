@@ -2,7 +2,6 @@ import React from 'react'
 import Header from './Header';
 import Particles from 'react-particles-js';
 import { makeStyles } from '@material-ui/styles';
-import RespNavbar from './RespNavbar';
 
 //CSS STYLES
 const useStyles = makeStyles({
@@ -22,7 +21,6 @@ const Home = () => {
 
     return (
         <>
-            <RespNavbar />
             <Header />
             <Particles
                 className={classes.particle}
