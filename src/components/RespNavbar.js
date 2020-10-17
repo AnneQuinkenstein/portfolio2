@@ -31,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13),
     margin: theme.spacing(5),
   },
+  link: {
+    display: "flex",
+    margin: "2vh",
+  },
   listItem: {
     color: "#26bef8",
   },
@@ -85,7 +89,7 @@ const RespNavbar = () => {
         <Divider />
 
         {menuItems.map((lsItem, key) => (
-         <Link key={key} href={lsItem.listPath} className={classes.link}>
+          <Link key={key} href={lsItem.listPath} className={classes.link}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>

@@ -7,7 +7,8 @@ import RespNavbar from "./RespNavbar";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "linear-gradient(to bottom, rgba(34, 40, 51, 0.3), #222833d4)",
-    height: '100vh',
+    minHeight: '100vh',
+    height: 'min-content',
   },
   timeLine: {
     position: "relative",
@@ -39,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "1rem",
     borderBottom: "2px solid rgb(48, 128, 214)",
     position: "relative",
-    margin: "0",
+    margin: "1rem 3rem 1rem 1rem",
     clear: "both",
     "&:after": {
       content: "''",
