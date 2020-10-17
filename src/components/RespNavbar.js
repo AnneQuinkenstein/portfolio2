@@ -45,14 +45,14 @@ const menuItems = [
     listPath: "/",
   },
   {
-    listIcon: <AssignmentInd />,
-    listText: "Resume",
-    listPath: "/resume",
-  },
-  {
     listIcon: <Apps />,
     listText: "Portfolio",
     listPath: "/portfolio",
+  },
+  {
+    listIcon: <AssignmentInd />,
+    listText: "Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <ContactMail />,
@@ -108,7 +108,10 @@ const RespNavbar = () => {
         <AppBar position="fixed" style={{ background: "black" }}>
           <Toolbar style={{ justifyContent: "flex-end" }}>
             <IconButton onClick={toggleSlider("right", true)}>
-              <Typography variant="h5" style={{ color: "#3080d6", margin: "0 200px 0 auto" }}>
+              <Typography
+                variant="h5"
+                style={{ color: "#3080d6", margin: "0 200px 0 auto" }}
+              >
                 explore
               </Typography>
             </IconButton>
@@ -118,11 +121,11 @@ const RespNavbar = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
-              <Footer/>
+              <Footer />
             </MobileRightMenuSlider>
           </Toolbar>
         </AppBar>
-        <Toolbar/>
+        <Toolbar />
       </Box>
     </>
   );
