@@ -11,7 +11,7 @@ const OnePage = () => (
   <ReactFullpage
     //fullpage options
     licenseKey={process.env.REACT_APP_FULLPAGE_API_KEY}
-    scrollingSpeed={1000} /* Options here */
+    scrollingSpeed={1000} 
     anchors={["Home", "Portfolio", "Resume", "Contact"]}
     responsiveWidth={1000}
     fixedElements={".MuiBox-root-5"}

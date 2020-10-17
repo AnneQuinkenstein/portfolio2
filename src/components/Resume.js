@@ -133,7 +133,7 @@ const Resume = () => {
             <Typography variant="h5" className={classes.subHeading}>
               Quality Assurance Process Development
             </Typography>
-            <Typography variant="body1" style={{ color: "#26bef8" }}>
+            <Typography variant="body1" style={{ color: "#38c8ff" }}>
               Test Manager
             </Typography>
             <Typography
@@ -156,7 +156,7 @@ const Resume = () => {
             <Typography variant="h5" className={classes.subHeading}>
               Testmanagement CRM, Billing, ERP & other Systems
             </Typography>
-            <Typography variant="body1" style={{ color: "#26bef8" }}>
+            <Typography variant="body1" style={{ color: "#38c8ff" }}>
               Consultant Quality Management & Process Management 
             </Typography>
             <Typography
@@ -179,7 +179,7 @@ const Resume = () => {
             <Typography variant="h5" className={classes.subHeading}>
               Functional Software Testing
             </Typography>
-            <Typography variant="body1" style={{ color: "#26bef8" }}>
+            <Typography variant="body1" style={{ color: "#38c8ff" }}>
               Senior QA Test Analyst 
             </Typography>
             <Typography

@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
         color: 'lightgrey',
     },
     subtitle: {
-        color: '#3080d6',
+        color: '#38c8ff',
         marginBottom: '7rem',
     },
     typedContainer: {

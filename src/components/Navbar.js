@@ -32,10 +32,11 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "3rem",
   },
   listItem: {
-    color: "#26bef8",
+    color: "lightgrey",
     minWidth: "35px",
   },
   root: {
+    minWidth: "50px",
     "& .MuiBottomNavigationAction-root": {
       minWidth: 0,
       maxWidth: 250,
@@ -80,19 +81,44 @@ const Navbar = () => {
     <>
       <Box component="nav" className={classes.navbar}>
         <AppBar style={{ background: "black", opacity: "0.8" }}>
-          <Toolbar style={{ justifyContent: "flex-start" }}>
-            <Avatar
-              className={classes.avatar}
-              src={avatar}
-              alt="Anne Quinkenstein"
-            />
-          
+          <Toolbar style={{ justifyContent: "center"}}>
+            <BottomNavigation
+              width="auto"
+              style={{ background: "transparent", marginRight: "auto" }}
+            >
+              <Avatar
+                className={classes.avatar}
+                src={avatar}
+                alt="Anne Quinkenstein"
+              />
+              <BottomNavigationAction
+                className={classes.root}
+                style={{ padding: 0 }}
+                icon={<LinkedInIcon />}
+                href="https://www.linkedin.com/in/anne-quinkenstein"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></BottomNavigationAction>
+              <BottomNavigationAction
+                className={classes.root}
+                style={{ padding: 0 }}
+                icon={<GitHubIcon />}
+                href="https://github.com/annequinkenstein"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></BottomNavigationAction>
+              <BottomNavigationAction
+                className={classes.root}
+                style={{ padding: 0 }}
+                icon={<ChromeReaderModeIcon />}
+                href="https://dev.to/annequinkenstein"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></BottomNavigationAction>
+            </BottomNavigation>
+            <Divider />
             {menuItems.map((lsItem, key) => (
-              <Link
-                key={key}
-                href={lsItem.listPath}
-                className={classes.link}
-              >
+              <Link key={key} href={lsItem.listPath} className={classes.link}>
                 <ListItemIcon className={classes.listItem}>
                   {lsItem.listIcon}
                 </ListItemIcon>
@@ -102,34 +128,7 @@ const Navbar = () => {
                 />
               </Link>
             ))}
-                <Divider />
-             <BottomNavigation width="auto" style={{ background: "transparent", marginLeft: "auto" }}>
-            <BottomNavigationAction
-              className={classes.root}
-              style={{ padding: 0 }}
-              icon={<LinkedInIcon />}
-              href="https://www.linkedin.com/in/anne-quinkenstein"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></BottomNavigationAction>
-            <BottomNavigationAction
-              className={classes.root}
-              style={{ padding: 0 }}
-              icon={<GitHubIcon />}
-              href="https://github.com/annequinkenstein"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></BottomNavigationAction>
-            <BottomNavigationAction
-              className={classes.root}
-              style={{ padding: 0 }}
-              icon={<ChromeReaderModeIcon />}
-              href="https://dev.to/annequinkenstein"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></BottomNavigationAction>
-            </BottomNavigation>
-            </Toolbar>
+          </Toolbar>
         </AppBar>
         <Toolbar />
       </Box>
