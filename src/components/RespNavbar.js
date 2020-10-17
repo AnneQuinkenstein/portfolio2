@@ -112,7 +112,7 @@ const RespNavbar = () => {
                 variant="h5"
                 style={{ color: "#3080d6", margin: "0 200px 0 auto" }}
               >
-                explore
+                portfolio
               </Typography>
             </IconButton>
             <MobileRightMenuSlider
