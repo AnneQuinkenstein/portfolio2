@@ -89,7 +89,6 @@ const Navbar = () => {
           
             {menuItems.map((lsItem, key) => (
               <Link
-                button
                 key={key}
                 href={lsItem.listPath}
                 className={classes.link}

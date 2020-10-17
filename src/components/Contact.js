@@ -124,7 +124,6 @@ const Contact = () => {
             <br />
             <InputField
               fullWidth={true}
-              fullHeight={true}
               label="Message"
               variant="outlined"
               multiline
