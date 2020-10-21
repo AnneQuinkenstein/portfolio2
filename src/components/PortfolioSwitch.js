@@ -1,10 +1,10 @@
 import React from "react";
-import { useMediaPredicate } from "react-media-hook";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import OnePagePortfolio from "./OnePagePortfolio";
 import Portfolio from "./Portfolio";
 
 const PortfolioSwitch = () => {
-  const phone = useMediaPredicate("(max-width: 1000px)");
+  const phone = useMediaQuery('(max-width: 1000px)');
   return (
     <>
       {phone && <Portfolio />}

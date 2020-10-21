@@ -1,5 +1,5 @@
 import React from "react";
-import { useMediaPredicate } from "react-media-hook";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import RespNavbar from "./RespNavbar";
@@ -110,8 +110,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Resume = () => {
+  const phone = useMediaQuery('(max-width: 1000px)');
   const classes = useStyles();
-  const phone = useMediaPredicate("(max-width: 1000px)");
+  
 
   return (
     <>
