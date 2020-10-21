@@ -22,8 +22,8 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 const useStyles = makeStyles((theme) => ({
   avatar: {
     display: "block",
-    width: theme.spacing(7),
-    height: theme.spacing(7),
+    width: "40px",
+    height: "50px",
   },
   link: {
     width: "6%",
