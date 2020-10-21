@@ -1,15 +1,14 @@
 import React from "react";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useMediaPredicate } from "react-media-hook";
 import Navbar from "./Navbar";
 import RespNavbar from "./RespNavbar";
 
 const NavbarSwitch = () => {
-  const phone = useMediaQuery("(max-width: 1000px)");
-
+  const phone = useMediaPredicate("(max-width: 1000px)");
   return (
     <>
-      {!phone && <Navbar />}
       {phone && <RespNavbar />}
+      {!phone && <Navbar />}
     </>
   );
 };

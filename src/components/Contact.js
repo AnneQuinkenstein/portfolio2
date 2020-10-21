@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useMediaPredicate } from "react-media-hook";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
@@ -43,11 +43,12 @@ const InputField = withStyles({
 })(TextField);
 
 const Contact = () => {
-  const phone = useMediaQuery('(max-width: 1000px)');
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,
   });
+
+  const phone = useMediaPredicate("(max-width: 1000px)");
 
   const classes = useStyles("");
 

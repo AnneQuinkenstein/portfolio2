@@ -19,11 +19,11 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 //CSS Styles
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   avatar: {
     display: "block",
-    width: '40px',
-    height: '50px',
+    width: theme.spacing(7),
+    height: theme.spacing(7),
   },
   link: {
     width: "6%",
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
       },
     },
   },
-});
+}));
 
 const menuItems = [
   {
