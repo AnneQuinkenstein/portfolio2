@@ -89,11 +89,11 @@ const Navbar = () => {
               width="auto"
               style={{ background: "transparent", marginRight: "auto" }}
             >
-              <Avatar
+              {/* <Avatar
                 className={classes.avatar}
                 src={avatar}
                 alt="Anne Quinkenstein"
-              />
+              /> */}
               <BottomNavigationAction
                 className={classes.root}
                 style={{ padding: 0 }}
