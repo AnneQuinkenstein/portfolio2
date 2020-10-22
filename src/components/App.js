@@ -14,7 +14,7 @@ const App = () => (
     scrollingSpeed={1000}
     anchors={["Home", "Portfolio", "Resume", "Contact"]}
     responsiveWidth={1000}
-    fixedElements={".MuiBox-root.jss5"}
+    fixedElements={".jss51"}
     render={({ state, fullpageApi }) => {
       return (
         <>

@@ -4,14 +4,12 @@ import {
   Toolbar,
   ListItemIcon,
   ListItemText,
-  // Avatar,
   Divider,
   Box,
   Link,
 } from "@material-ui/core";
 import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
-// import avatar from "../images/logo.png";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -20,11 +18,6 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 //CSS Styles
 
 const useStyles = makeStyles((theme) => ({
-  // avatar: {
-  //   display: "block",
-  //   width: "40px",
-  //   height: "50px",
-  // },
   link: {
     width: "6%",
     display: "flex",
