@@ -85,11 +85,11 @@ const Navbar = () => {
       <Box component="nav" className={classes.navbar}>
         <AppBar style={{ background: "black", opacity: "0.8" }}>
           <Toolbar style={{ justifyContent: "center" }}>
-            <Avatar
+            {/* <Avatar
                 className={classes.avatar}
                 src={avatar}
                 alt="Anne Quinkenstein"
-              />
+              /> */}
             <BottomNavigation
               width="auto"
               style={{ background: "transparent", marginRight: "auto" }}
