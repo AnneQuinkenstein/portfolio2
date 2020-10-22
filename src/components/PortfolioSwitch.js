@@ -7,8 +7,8 @@ const PortfolioSwitch = () => {
   const phone = useMediaPredicate("(max-width: 1000px)");
   return (
     <>
-      {phone && <Portfolio />}
-      {!phone && <OnePagePortfolio />}
+      <div>{phone && <Portfolio />}</div>
+      <div>{!phone && <OnePagePortfolio />}</div>  
     </>
   );
 };

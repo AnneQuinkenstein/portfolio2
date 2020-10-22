@@ -7,8 +7,8 @@ const NavbarSwitch = () => {
   const phone = useMediaPredicate("(max-width: 1000px)");
   return (
     <>
-      {phone && <RespNavbar />}
-      {!phone && <Navbar />}
+    <div> {phone && <RespNavbar />}</div>
+     <div>  {!phone && <Navbar />}</div>
     </>
   );
 };
