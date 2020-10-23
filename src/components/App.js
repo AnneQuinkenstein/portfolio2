@@ -14,7 +14,7 @@ const App = () => (
     scrollingSpeed={1000}
     anchors={["Home", "Portfolio", "Resume", "Contact"]}
     responsiveWidth={1000}
-    fixedElements={".jss51"}
+    fixedElements={"header"}
     render={({ state, fullpageApi }) => {
       return (
         <>
