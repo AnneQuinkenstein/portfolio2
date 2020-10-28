@@ -12,7 +12,7 @@
 
 <br />
 <p align="center">
-  <a href="https://anne-quinkenstein.netlify.app/">
+  <a href="https://anne-quinkenstein.de/">
     <img src="https://i.ibb.co/TRJndCZ/Peek-2020-09-27-00-25.gif" alt="Logo" width="300" height="160">
   </a>
 
@@ -20,7 +20,7 @@
    Website to get a short glance at my work-life: my work experience, some of my projects, a possibility to get in touch 
     <br />
     <br />
-    <a href="https://anne-quinkenstein.netlify.app/">Demo</a>
+    <a href="https://anne-quinkenstein.de/">Demo</a>
     ·
     <a href="https://github.com/AnneQuinkenstein/portfolio2/issues">Report Bug</a>
   </p>
@@ -32,6 +32,7 @@
 - [Material UI](https://material-ui.com/)
 - [Formspree](https://formspree.io/)
 - [Particles](https://www.npmjs.com/package/react-particles-js)
+- OnePage
 
 
 ## Contact
