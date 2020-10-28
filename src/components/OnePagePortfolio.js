@@ -82,7 +82,7 @@ const OnePagePortfolio = () => {
                   image={gamenight}
                 />
                 <CardContent style={{ paddingBottom: 0 }}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom variant="h7">
                     React || Context || SCSS || openAPI
                   </Typography>
                 </CardContent>
@@ -165,7 +165,7 @@ const OnePagePortfolio = () => {
                   image={weatherapp}
                 />
                 <CardContent style={{ paddingBottom: "0" }}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom variant="h7">
                     React || Context || SCSS || openAPI
                   </Typography>
                 </CardContent>
@@ -236,7 +236,7 @@ const OnePagePortfolio = () => {
                   image={animalsChoice}
                 />
                 <CardContent style={{ paddingBottom: 0 }}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom variant="h7">
                     React || Router V6 || Material UI
                   </Typography>
                 </CardContent>
@@ -306,7 +306,7 @@ const OnePagePortfolio = () => {
                   image={NokiaHackathon}
                 />
                 <CardContent style={{ paddingBottom: 0 }}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom variant="h7">
                     React || NOKIA API || 24h Hackathon
                   </Typography>
                 </CardContent>
@@ -385,7 +385,7 @@ const OnePagePortfolio = () => {
                   image={nottodolist}
                 />
                 <CardContent style={{ paddingBottom: 0 }}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom variant="h7">
                     React || Strapi || Transition Group
                   </Typography>
                 </CardContent>
@@ -454,7 +454,7 @@ const OnePagePortfolio = () => {
                   image={remoteSchool}
                 />
                 <CardContent style={{ paddingBottom: 0 }}>
-                  <Typography gutterBottom variant="h5">
+                  <Typography gutterBottom variant="h7">
                     HTML || CSS || FLEXBOX
                   </Typography>
                 </CardContent>

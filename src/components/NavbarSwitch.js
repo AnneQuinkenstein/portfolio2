@@ -8,7 +8,7 @@ const NavbarSwitch = () => {
   return (
     <>
     <div> {phone && <RespNavbar />}</div>
-     <div>  {!phone && <Navbar />}</div>
+     <div>{!phone && <Navbar />}</div>
     </>
   );
 };
